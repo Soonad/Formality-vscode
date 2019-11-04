@@ -1,0 +1,56 @@
+{
+	"name": "fm",
+	"displayName": "Formality",
+	"description": "Syntax highlighting for Formality",
+	"version": "0.2.0",
+	"publisher": "SunshineCybernetics",
+	"author": {
+		"name": "Maisa Milena"
+	},
+	"license": "SEE LICENSE IN LICENSE.txt",
+	"keywords": [
+		"formality",
+		"fm"
+	],
+	"icon": "images/logo-formality.png",
+	"engines": {
+		"vscode": "^1.36.0"
+	},
+	"categories": [
+		"Programming Languages"
+	],
+	"contributes": {
+		"languages": [
+			{
+				"id": "fm",
+				"aliases": [
+					"Formality",
+					"fm"
+				],
+				"extensions": [
+					".fm"
+				],
+				"configuration": "./language-configuration.json"
+			}
+		],
+		"grammars": [
+			{
+				"language": "fm",
+				"scopeName": "source.fm",
+				"path": "./syntaxes/fm.tmLanguage.plist"
+			}
+		]
+	},
+	"bugs": {
+		"url": "https://github.com/MaisaMilena/Formality-vscode/issues"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/MaisaMilena/Formality-vscode.git"
+	},
+	"__metadata": {
+		"id": "307f747c-8551-4dba-93f5-2d593dd0f54b",
+		"publisherDisplayName": "SunshineCybernetics",
+		"publisherId": "d9f8da9a-2f4e-49f0-afda-c629b2d7560f"
+	}
+}
