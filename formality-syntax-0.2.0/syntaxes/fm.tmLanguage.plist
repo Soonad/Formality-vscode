@@ -70,7 +70,7 @@
         </dict>
         <dict>
           <key>match</key>
-          <string>(//.*$)</string>
+          <string>((\s*|\t*)//.*)</string>
           <key>name</key>
           <string>comment.line.double-slash.fm</string>
         </dict>
@@ -82,31 +82,31 @@
       <array>
         <dict>
           <key>match</key>
-          <string>(\bT\s)</string>
+          <string>(\bT\s|\bprint\b|\blog\b|\bhalt\b)</string>
           <key>name</key>
           <string>keyword.other.fm</string>
         </dict>
         <dict>
           <key>match</key>
-          <string>(import|open)</string>
+          <string>(import\s\w*@?\d?)</string>
           <key>name</key>
           <string>keyword.control.import.fm</string>
         </dict>
         <dict>
           <key>match</key>
-          <string>(\s\.=\s|\s.&lt;\s|\s.&gt;\s|\s.!\s| \.\| |\s.&amp;\s| \s\.&gt;&gt;\s | \s\.&lt;&lt;\s | \.\^ | \.\ˆ | ==)</string>
+          <string>(\s.&lt;.\s|\s.&gt;.\s|\s.!.\s| \.\|\. | \.&amp;\.| \.&gt;&gt;\. | \s\.&lt;&lt;.\s | .==.)</string>
           <key>name</key>
           <string>keyword.operator.logical.fm</string>
         </dict>
         <dict>
           <key>match</key>
-          <string>(\s-\s| \+ | \* | \% | / | \^ | \ˆ )</string>
+          <string>(.-. | .\+. | \.\*\. | .%. | \d\s?\./\.\s?\d | \.\^\. | \.\ˆ\. | .#. | .\*\*. )</string>
           <key>name</key>
           <string>keyword.operator.arithmetic.fm</string>
         </dict>
         <dict>
           <key>match</key>
-          <string>(\bif\s|\belse[\s\x{007c}\:]|\bthen[\s\x{007c}\:]|@\s|case)</string>
+          <string>(\bif\s|\belse[\s\x{007c}\:]|\bthen[\s\x{007c}\:]|@\s|\bcase\b)</string>
           <key>name</key>
           <string>keyword.conditional.fm</string>
         </dict>
@@ -160,13 +160,13 @@
       <array>
         <dict>
           <key>match</key>
-          <string>(#|~|!|\$|\.|\?)</string>
+          <string>(#|~|!|\$|\.|\?|\+|%|&amp;|\*)</string>
           <key>name</key>
           <string>punctuation.definition.variable.fm</string>
         </dict>
         <dict>
           <key>match</key>
-          <string>(\s+=\s+|:|=[\x{003e}]|=&gt;|-&gt;|~[\x{003e}]|,|&lt;|&gt;|;)</string>
+          <string>(=|:|=[\x{003e}]|=&gt;|\s-&gt;\s|~[\x{003e}]|,|&lt;|&gt;|;)</string>
           <key>name</key>
           <string>punctuation.fm</string>
         </dict>
