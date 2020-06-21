@@ -17,7 +17,8 @@
 		"vscode": "^1.36.0"
 	},
 	"categories": [
-		"Programming Languages"
+		"Programming Languages",
+		"Snippets"
 	],
 	"contributes": {
 		"languages": [
@@ -39,7 +40,13 @@
 				"scopeName": "source.fm",
 				"path": "./syntaxes/fm.tmLanguage.plist"
 			}
-		]
+		],
+		"snippets": [
+      {
+        "language": "fm",
+        "path": "./snippets/fm.json"
+      }
+    ]
 	},
 	"bugs": {
 		"url": "https://github.com/MaisaMilena/Formality-vscode/issues"

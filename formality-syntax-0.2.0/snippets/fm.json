@@ -1,0 +1,35 @@
+{
+	"Type definition": {
+		"prefix": "Type definition",
+		"body": [
+			"T ${1:name}",
+			"| ${2:constructor};$0"
+		],
+		"description": "Define a type."
+	},
+	"Function definition": {
+		"prefix": "Function definition",
+		"body": [
+			"${1:name}(${2:parameters}): ${3:return_type}",
+			"\t${4:body}"
+		],
+		"description": "Define a function."
+	},
+	"Case expression": {
+		"prefix": "Case expression",
+		"body": [
+			"case ${1:input_expression}:",
+			"| ${2:pattern} => ${3:output_expression};",
+			": ${4:motive};$0"
+		],
+		"description": "Pattern match over different cases."
+	},
+	"Equality assertion (Simple)": {
+		"prefix": "Equality assertion (Simple)",
+		"body": [
+			"${1:name}: Equal(${2:expression_type}, ${3:expression_a}, ${4:expression_b})",
+			"\tEqual.to<${2:expression_type},${4:expression_b}>"
+		],
+    "description": "Assert that two expressions are equal."
+	}
+}
