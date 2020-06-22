@@ -28,7 +28,7 @@
 		"prefix": "Equality assertion (Simple)",
 		"body": [
 			"${1:name}: Equal(${2:expression_type}, ${3:expression_a}, ${4:expression_b})",
-			"\tEqual.to<${2:expression_type},${4:expression_b}>"
+			"\tEqual.to<${2:expression_type}, ${4:expression_b}>"
 		],
     "description": "Assert that two expressions are equal."
 	}
